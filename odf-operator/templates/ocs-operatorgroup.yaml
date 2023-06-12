@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  annotations:
+  name: openshift-storage-csfq2
+  namespace: openshift-storage
+spec:
+  targetNamespaces:
+  - openshift-storage

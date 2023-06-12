@@ -1,0 +1,20 @@
+apiVersion: ocs.openshift.io/v1
+kind: StorageCluster
+metadata:
+  name: ocs-storagecluster
+  namespace: openshift-storage
+spec:
+  version: 4.11.8
+  storageDeviceSets:
+    - count: 4
+      dataPVCTemplate:
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: '1'
+          storageClassName: lso-volumeset
+          volumeMode: Block
+      name: ocs-deviceset-lso-volumeset
+      replica: 1
