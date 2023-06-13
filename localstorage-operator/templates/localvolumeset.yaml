@@ -15,9 +15,9 @@ spec:
       - key: kubernetes.io/hostname
         operator: In
         values:
-        - ip-10-0-136-213.eu-central-1.compute.internal
-        - ip-10-0-153-182.eu-central-1.compute.internal
-        - ip-10-0-167-178.eu-central-1.compute.internal
-        - ip-10-0-181-68.eu-central-1.compute.internal
+        - ip-10-0-133-81.eu-central-1.compute.internal
+        - ip-10-0-138-165.eu-central-1.compute.internal
+        - ip-10-0-180-173.eu-central-1.compute.internal
+        - ip-10-0-186-172.eu-central-1.compute.internal
   storageClassName: lso-volumeset
   volumeMode: Block
