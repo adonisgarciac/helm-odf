@@ -4,9 +4,9 @@ metadata:
   name: local-storage-operator
   namespace: openshift-local-storage
 spec:
-  channel: stable
-  installPlanApproval: Automatic
+  channel: {{ .Values.channel_lso_operator }}
+  installPlanApproval: {{ .Values.lso_planApproval }}
   name: local-storage-operator
   source: redhat-operators
   sourceNamespace: openshift-marketplace
-  startingCSV: local-storage-operator.4.11.0-202304181642
+  startingCSV: {{ .Values.version_lso_opertor }}
