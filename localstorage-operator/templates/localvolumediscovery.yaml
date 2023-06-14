@@ -11,3 +11,5 @@ spec:
         operator: In
         values:
         {{- with .Values.lso_nodes }}
+{{ toYaml . | trim | indent 12 }}
+        {{- end }}
