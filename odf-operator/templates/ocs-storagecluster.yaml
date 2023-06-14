@@ -5,9 +5,9 @@ metadata:
   namespace: openshift-storage
 spec:
   monDataDirHostPath: /var/lib/rook
-  version: {{ .Values.ocs-storagecluster-version }}
+  version: {{ .Values.version_storagecluster }}
   storageDeviceSets:
-    - count: {{ .Values.storageDeviceSets-count }}
+    - count: {{ .Values.count_storageDeviceSets }}
       dataPVCTemplate:
         spec:
           accessModes:
